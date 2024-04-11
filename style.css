@@ -663,14 +663,21 @@ h3.my-profession {
     margin-bottom: 30px;
 }
 .portfolio .portfolio-item-inner {
+    height: 20rem;
     position: relative;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
+.portfolio .portfolio-item-inner .portfolio-img {
+    height: 100%;
+}
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
+    height: 100%;
+    background: #000;
+    object-fit: contain;
     border-radius: 10px;
     display: block;
     transition: all 0.3s ease;
